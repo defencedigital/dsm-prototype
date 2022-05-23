@@ -1,0 +1,44 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Home – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+          Defence Service Manual prototype
+          <span class="govuk-caption-xl">Gov Prototype kit {{releaseVersion}}</span>
+      </h1>{{releaseVersion | log }}
+      <p>
+          This is a Beta prototype for the Defence Service Manual project to help projects meet MOD and government standards. Please be aware that the prototype's main purpose is for use in user research sessions to understand what does and doesn't work for users.
+      </p>
+      <div class="govuk-warning-text">
+          <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+          <strong class="govuk-warning-text__text">
+            <span class="govuk-warning-text__assistive">Please note</span>
+            All pages and features within this prototype should be considered EXPERIMENTAL.
+          </strong>
+      </div>
+
+      <p>Features included with this prototype:
+          <ul class="govuk-list govuk-list--bullet">
+              <li>A Service Manual style front page where users can access everything in one place</li>
+              <li>Guidance grouped into themes to help users navigate to relevant content</li>
+              <li>Community pages to facilitate discussion, collaboration and continuous improvement</li>
+          </ul>
+      </p>
+      <p>
+          Access the prototype at <a href="dsm-home.html">Defence Service Manual prototype</a>
+      </p>
+
+
+      <a href="https://design-system.service.gov.uk">GOV.UK Design System</a>
+
+  </div>
+
+
+{% endblock %}
