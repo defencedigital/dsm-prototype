@@ -3578,7 +3578,7 @@ x:-moz-any-link {
 
 .govuk-header__container--full-width {
   padding: 0 15px;
-  border-color: #4d2942;
+  border-color: #1d70b8;
 }
 .govuk-header__container--full-width .govuk-header__menu-button {
   right: 15px;
@@ -3588,7 +3588,7 @@ x:-moz-any-link {
   position: relative;
   margin-bottom: -10px;
   padding-top: 10px;
-  border-bottom: 10px solid #4d2942;
+  border-bottom: 10px solid #1d70b8;
 }
 .govuk-header__container:after {
   content: "";
@@ -4338,7 +4338,7 @@ x:-moz-any-link {
   outline: 2px solid transparent;
   outline-offset: -2px;
   color: #ffffff;
-  background-color: #4d2942;
+  background-color: #1d70b8;
   letter-spacing: 1px;
   text-decoration: none;
   text-transform: uppercase;
