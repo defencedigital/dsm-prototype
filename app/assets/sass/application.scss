@@ -16,3 +16,85 @@ $govuk-assets-path: '/govuk/assets/';
 @import "patterns/related-items";
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+
+
+.govuk-header__container--full-width {
+  padding: 0 15px;
+  border-color: #4d2942;
+}
+.govuk-header__container--full-width .govuk-header__menu-button {
+  right: 15px;
+}
+
+.govuk-header__container {
+  position: relative;
+  margin-bottom: -10px;
+  padding-top: 10px;
+  border-bottom: 10px solid #4d2942;
+}
+.govuk-header__container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.govuk-header__logotype {
+  display: inline-block;
+  margin-right: 5px;
+}
+@media (forced-colors: active) {
+  .govuk-header__logotype {
+    forced-color-adjust: none;
+    color: linktext;
+  }
+}
+.govuk-header__logotype:last-child {
+  margin-right: 0;
+}
+
+.govuk-header__logotype-crown {
+  position: relative;
+  top: -1px;
+  margin-right: 1px;
+  fill: currentColor;
+  vertical-align: top;
+}
+
+.govuk-header__logotype-crown-fallback-image {
+  width: 36px;
+  height: 32px;
+  border: 0;
+  vertical-align: bottom;
+}
+
+.govuk-header__product-name {
+  font-family: "GDS Transport", arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1;
+  display: inline-table;
+}
+.govuk-tag {
+    display: inline-block;
+    outline: 2px solid transparent;
+    outline-offset: -2px;
+    color: #ffffff;
+    background-color: #4d2942;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "GDS Transport", arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 700;
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 1;
+    padding-top: 5px;
+    padding-right: 8px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+  }
