@@ -1,0 +1,218 @@
+{% extends "layout.html" %} {% block pageTitle %} GOV.UK page template – {{
+serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block content %}
+<a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">
+      Content Designers and accessibility
+    </h1>
+
+    <p>
+      Making content easy to understand makes it better for everyone. Simple
+      content is even more important for people who have difficulty reading and
+      anyone whose first language is not English.
+    </p>
+
+    <h2 class="govuk-heading-l">Write in plain English</h2>
+
+    <p>
+      To create accessible content, it’s important to:
+    </p>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>only include content that people need</li>
+      <li>use simple words</li>
+      <li>keep sentences short</li>
+      <li>avoid long paragraphs</li>
+    </ul>
+
+    <p>
+      You need to follow the
+      <a href="https://www.gov.uk/guidance/content-design/writing-for-gov-uk"
+        >GOV.UK guidance on writing content</a
+      >.
+    </p>
+
+    <h2 class="govuk-heading-l">Use clear and unique page titles</h2>
+
+    <p>
+      Page titles should clearly describe the purpose and content of the page.
+      Work with a User Researcher to check users understand page titles.
+    </p>
+
+    <p>
+      Every page should have a unique title. This makes it easier to find the
+      content you are looking for. If pages have the same or similar headings,
+      it’s hard for assistive technologies to tell you which page you are on.
+    </p>
+
+    <p>
+      Often, the page URL can be the same as the page title. Clear URLs make
+      content easier to find if you need to come back later.
+    </p>
+
+    <p>This is a good url:</p>
+    <p>/guidance/pensions-and-compensation-for-veterans</p>
+
+    <p>This is a bad url:</p>
+    <p>/user/56256655226/post/817837847.php</p>
+
+    <p>
+      Work with a Frontend Developer to make sure all URLs follow a
+      user-friendly format.
+    </p>
+
+    <h2 class="govuk-heading-l">Use the right headings</h2>
+
+    <p>
+      Avoid using bold text instead of a heading style. Assistive technology
+      does not recognise bold as a header.
+    </p>
+
+    <p>
+      A heading style can be any level from H1 to H6. Make sure you use the
+      correct level of headings. Start with H1 as the page title. Do not skip
+      levels, for example following a H2 with a H4.
+    </p>
+
+    <p>
+      Follow the
+      <a
+        href="https://www.gov.uk/guidance/content-design/writing-for-gov-uk#headings"
+        >GOV.UK guidance on heading levels.</a
+      >
+    </p>
+
+    <h2 class="govuk-heading-l">Add visually hidden text</h2>
+
+    <p>
+      People who use assistive technologies may need more content to describe
+      something on screen, for example a photo or a graph. This additional
+      description is known as “alternative text” or “alt text”. It does not
+      appear on the screen for all users.
+    </p>
+
+    <p>
+      You only need to add alt text to images that provide useful context, for
+      example where to sign your passport. If an image is purely decorative, you
+      do not need to add alt text. Consider if users need a decorative image at
+      all.
+    </p>
+
+    <p>
+      Find tips on writing alt text in the
+      <a href="https://design-system.service.gov.uk/styles/images/"
+        >GOV.UK Design System’s guidance on images</a
+      >.
+    </p>
+
+    <h2 class="govuk-heading-l">Captions and transcripts</h2>
+
+    <p>
+      If you have audio or video content, make sure it is accessible to everyone
+      including people with sight and hearing impairments. You might need
+      captions on the screen or a description of the content in a written
+      transcript.
+    </p>
+
+    <p>
+      Check the
+      <a
+        href="https://www.gov.uk/guidance/how-to-publish-on-gov-uk/images-and-videos"
+        >GOV.UK guidance on captions and transcripts</a
+      >.
+    </p>
+
+    <h2 class="govuk-heading-l">Make links work out of context</h2>
+
+    <p>
+      Link content needs to make sense without any of the content around it.
+      Many assistive technologies have the option to drop all content from a
+      page except the links.
+    </p>
+
+    <p>
+      Try removing everything else on the page to make sure links make sense out
+      of context. If the link takes you to do something, start with a verb. For
+      example, ‘Give feedback’.
+    </p>
+
+    <p>
+      Do not use ‘Click here’ or ‘More’. Out of context these words do not make
+      sense, and ‘click’ assumes a mouse is being used.
+    </p>
+
+    <p>
+      Follow the
+      <a href="https://www.gov.uk/guidance/content-design/links"
+        >GOV.UK guidance on writing link text</a
+      >.
+    </p>
+
+    <h2 class="govuk-heading-l">Be consistent</h2>
+
+    <p>
+      You need to use consistent labels and descriptions across a digital
+      product or service.
+    </p>
+
+    <p>
+      If the button at the bottom of each page is labelled ‘Continue’, it should
+      be labelled ‘Continue’ on all pages and not something similar like ‘Next’.
+      This is a better experience for all users.
+    </p>
+
+    <h2 class="govuk-heading-l">Write good error messages</h2>
+
+    <p>
+      When a user enters information incorrectly, it’s best practice to help
+      them with a short, clear message. For example, f a user does not fill in
+      their name correctly the error message should be: ‘Enter your name’.
+    </p>
+
+    <p>
+      If there are security considerations, you still need to provide an error
+      message but it can be vague. When signing in to an account, the error
+      message should be: ‘Enter your email and password correctly.’
+    </p>
+
+    <p>
+      Work with a Frontend Developer and a QA Tester to work out what error
+      messages you need to write content for.
+    </p>
+
+    <p>
+      Before you write a new error message, check the
+      <a
+        href="https://design-system.service.gov.uk/components/error-message/#:~:text=Use%20error%20message%20templates"
+        >GOV.UK error message templates</a
+      >.
+    </p>
+
+    <h2 class="govuk-heading-l">Useful links</h2>
+
+    <ul class="govuk-list govuk-list">
+      <li>
+        <a
+          href="https://www.gov.uk/guidance/guidance-and-tools-for-digital-accessibility#designing-accessible-content"
+          >Designing accessible content</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://gds.blog.gov.uk/2016/02/23/writing-content-for-everyone/"
+          >Writing content for everyone in your audience</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://gcs.civilservice.gov.uk/guidance/digital-communication/accessible-communications/"
+          >Creating accessible communications</a
+        >
+      </li>
+    </ul>
+
+    {% endblock %}
+  </div>
+</div>
