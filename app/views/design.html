@@ -1,22 +1,38 @@
-{% extends "layout.html" %}
-
-{% block pageTitle %}
-  GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
-{% endblock %}
-
-{% block content %}
-<a class="govuk-back-link" href="javascript:window.history.back()">Back</a> 
+{% extends "layout.html" %} {% block pageTitle %} GOV.UK page template – {{
+serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block content %}
+<a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
 
 <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">
+      Design in Defence
+    </h1>
+    <p>
+      Find out what good looks like in Defence, name things well and use
+      patterns that have been tested.
+    </p>
 
-        <h1 class="govuk-heading-xl">
-            Design
-        </h1>
-        <p>
-            Design content to be added
-          </p>
-       
-            </div>
+  <h2 class="govuk-heading-l">Things to consider in Defence </h2>
 
-{% endblock %}
+  <ul class="govuk-list govuk-list">
+    <li><a href="">Keep your users safe</li>
+    <li><a href="">Start with simple designs</a></li>
+    <li><a href="">Design a secure service</a></li>
+  </ul>
+
+  <h2 class="govuk-heading-l">Designing something new</h2>
+
+  <ul class="govuk-list govuk-list">
+    <li><a href="">Check existing patterns</li>
+    <li><a href="">Add a design to the MOD Design Library</a></li>
+  </ul>
+
+
+  <h2 class="govuk-heading-l">Useful links</h2>
+
+  <ul class="govuk-list govuk-list">
+    <li><a href="/accessibility-interaction-designers">Interaction Designers and accessibility</li>
+  </ul>
+
+  {% endblock %}
+</div>
